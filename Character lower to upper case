@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+char toupper(char);
+
+int main() {
+char alpha='z';
+cout<<toupper(alpha);
+}
+
+char toupper(char alpha)
+{
+    if (alpha>='a' && alpha <='z')
+    {
+        return alpha-'a'+'A';
+    }
+    else
+    {
+        return alpha;
+    }
+}
