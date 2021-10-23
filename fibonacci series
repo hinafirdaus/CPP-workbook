@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int fibo(int);
+
+int main() {
+int num=7, i=0;
+while(i<num)
+{
+    cout<<" "<<fibo(i);
+    i++;
+}
+}
+
+int fibo(int num)
+{
+    if ((num==0) || (num==1))
+    {
+        return (num);
+        
+    }
+    else
+    {
+        return fibo(num-1)+fibo(num-2);
+    }
+}
